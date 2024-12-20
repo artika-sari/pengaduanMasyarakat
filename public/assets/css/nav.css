@@ -1,0 +1,115 @@
+body{
+    background-color: #5693c1;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    font-size: 24px;
+    transition: 0.3 color;
+    margin-left: 60px;
+}
+
+.logout-button {
+    background-color:#b33348;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    margin-right: 60px;
+}
+
+.button-success {
+    background-color:#248b3e;
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.button-success:hover {
+    background-color: #1d6714;
+}
+
+.logout-button:hover {
+    background-color: #761b2c;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: black;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #27374D;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;   
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+nav{
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    width: 80%;
+    margin-left: 137px;
+    margin-top: 25px;
+}  
+
+.side {
+    background-color: white;
+    height: 900px;
+    width: 600px;
+    align-items: end;
+    justify-content: end;
+    left: 50px;
+}
+
+.nsv-side {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.action-buttons .btn {
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e293b;
+    color: white;
+    border-radius: 50%;
+  }
